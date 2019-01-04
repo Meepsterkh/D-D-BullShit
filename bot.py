@@ -312,3 +312,5 @@ async def classes(ctx):
     embed.add_field(name="|Druid", value="|Ranger", inline=False)
 
     await client.send_message(ctx.message.channel, embed= embed)
+
+client.run(token)
