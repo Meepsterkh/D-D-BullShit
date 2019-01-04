@@ -19,7 +19,7 @@ client.remove_command("help")
 # Program start up
 @client.event
 async def on_ready():
-    await client.change_presence(game = Game(name = "with spells- |help"))
+    await client.change_presence(game = Game(name = "with spells... write \"|help\" to start"))
     print('Logged in as')
     print(client.user.name)
     print(client.user.id)
