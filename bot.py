@@ -231,6 +231,8 @@ async def on_message(message):
         await extra.classCheck("warlock")
     elif message.content.startswith("|ranger") or message.content.startswith("|Ranger"):
         await extra.classCheck("ranger")
+    elif message.content.startswith("|artificer") or message.content.startswith("|Artificer"):
+        await extra.classCheck("artificer")
 
 
     if message.content.startswith("|wild magic list"):
@@ -310,6 +312,7 @@ async def classes(ctx):
     embed.add_field(name="|Bard", value="|Cleric", inline=False)
     embed.add_field(name="|Warlock", value="|Paladin", inline=False)
     embed.add_field(name="|Druid", value="|Ranger", inline=False)
+    embed.add_field(name="|Artificer", value="|Pm MeepsterKH#2707 to add more", inline=False)
 
     await client.send_message(ctx.message.channel, embed= embed)
 
