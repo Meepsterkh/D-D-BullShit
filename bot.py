@@ -320,4 +320,8 @@ async def classes(ctx):
 
     await client.send_message(ctx.message.channel, embed= embed)
 
+    
+    
+ 
 client.run(str(os.environ.get('BOT_TOKEN')))
+
