@@ -5,11 +5,12 @@ import discord
 from spellAPI import*
 import random
 import requests
+import os
+
 
 
 # def main settings
 prefix = ("|")
-token = 'NTI1ODU1MzIxNjIxNTI4NTk3.Dv9Obg.p7AYaFboWFwVaHRsqXKmX1i4oRc'
 
 # change main settings
 client = Bot(command_prefix=prefix)
@@ -251,6 +252,9 @@ async def on_message(message):
     if message.content.startswith("|joke"):
         await extra.dadJoke()
 
+    elif message.content.startswith("!ass"):
+        await client.send_message(message.channel, "shows booty")
+
     await extra.spellAll()
 
     if message.content.startswith("|fuck"):
@@ -316,4 +320,4 @@ async def classes(ctx):
 
     await client.send_message(ctx.message.channel, embed= embed)
 
-client.run(token)
+client.run(str(os.environ.get('BOT_TOKEN')))
