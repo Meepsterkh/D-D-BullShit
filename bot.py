@@ -260,8 +260,6 @@ async def on_message(message):
     if message.content.startswith("|fuck"):
         await client.send_message(message.channel, "Fuck You")
     
-    if (str(message.author) == "cooligrek#8280"):
-        await client.send_message(message.channel, "Fuck You Ivan")
 
 
 
